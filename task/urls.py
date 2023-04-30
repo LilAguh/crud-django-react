@@ -1,4 +1,5 @@
 from django.urls import path, include
+from rest_framework.documentation import include_docs_urls
 from rest_framework import routers
 from task import views
 
@@ -14,7 +15,8 @@ routers.register(r'task', views.TaskView, 'task')
 # 2 donde provienen las url generadas por django
 
 urlpatterns = [
-    path('api/v1/', include(routers.urls))
+    path('api/v1/', include(routers.urls)),
+    path('docs/', include_docs_urls(title='Tasks API'))
 ]
 
 # con esto seria suficiente, ya crea las rutas para las peticiones
