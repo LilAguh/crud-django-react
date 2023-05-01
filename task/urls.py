@@ -19,5 +19,7 @@ urlpatterns = [
     path('docs/', include_docs_urls(title='Tasks API'))
 ]
 
+# en la ruta docs/ se crea una documentacion de uso de la api, de manera automatica
+
 # con esto seria suficiente, ya crea las rutas para las peticiones
 # GET, PUT, DELETE, POST
