@@ -9,9 +9,7 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-
         <Navigation/>
-
         <Routes>
           <Route path='/' element={<Navigate to='/tasks'/>}/>
           <Route path='/tasks' element={<TaskPage/>}/>
